@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @*Resources/cdn*@
+    <link href="~/Resources/cdn/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Resources/cdn/js/jquery.slim.min.js"></script>
+    <script src="~/Resources/cdn/js/popper.min.js"></script>
+    <script src="~/Resources/cdn/js/bootstrap.bundle.min.js"></script>
+    <link href="~/Resources/cdn/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <script src="~/Resources/cdn/js/jquery-3.5.1.js"></script>
+    <script src="~/Resources/cdn/js/jquery.dataTables.js"></script>
+    <script src="~/Resources/cdn/js/modernizr-2.8.3.js"></script>
+    <link href="~/Resources/assets/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <center>
+        <div class="container-fluid">
+            @*Tạo 2 thẻ a cho 2 input trường hợp*@
+            @Html.ActionLink("Ví dụ 1: XML (có hỗ trợ)"
+            ,"ProcessExample","Example"
+            ,new { type = "XML" }
+            ,new { @class = "btn btn-outline-success",type = "button" })
+            @Html.ActionLink("Ví dụ 2: JSON (không hỗ trợ)"
+            ,"ProcessExample"
+            ,"Example"
+            ,new { type = "JSON" }
+            ,new { @class = "btn btn-outline-danger",type = "button" })
+        </div>
+    </center>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+    <script>
+        /*jquery.dataTables*/
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+    </script>
+</body>
+</html>
