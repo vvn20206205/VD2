@@ -30,22 +30,22 @@ namespace ExampleAdapterWebFile.Models {
         }
         private string OutputTable<T>(T iObject,List<string> iListTakePropertiesObject,XDocument iXDoc) {
             string _OutputTable = ""+
-                    "<div class=\"alert alert-success\">\r\n"+
-                        "<h1>"+iObject.ToString().Split('.')[2]+"</h1>\r\n"+
-                    "</div>"+
-                        "<div style=\"border: 1px blue solid;\" class=\"container mt-5\"> "+
-                            "<table id=\"example\" class=\"display\" style=\"width:100%\">";
+            "<div class=\"alert alert-success\">\r\n"+
+            "<h1>"+iObject.ToString().Split('.')[2]+"</h1>\r\n"+
+            "</div>"+
+            "<div style=\"border: 1px blue solid;\" class=\"container mt-5\"> "+
+            "<table id=\"example\" class=\"display\" style=\"width:100%\">";
             string _THead = HeadTable(iListTakePropertiesObject);
             string _TBody = BodyTable<T>(iObject,iListTakePropertiesObject,iXDoc);
 
             _OutputTable+=$"{_THead} {_TBody} ";
             _OutputTable+=" "+
-                            "</table> "+
-                        "</div> ";
+            "</table> "+
+            "</div> ";
             return _OutputTable;
         }
         private string HeadTable(List<string> iListTakePropertiesObject) {
-            string _THead = " <thead>  <tr> ";
+            string _THead = " <thead> <tr> ";
             foreach(string itemListTakePropertiesObject in iListTakePropertiesObject) {
                 _THead+=$"<th>{itemListTakePropertiesObject}</th> ";
             }

@@ -18,11 +18,11 @@ namespace ExampleAdapterWebFile.Models {
         public Xml(string iPath) {
             Path=iPath;
             Content=File.ReadAllText(Path);
-        } 
+        }
         public Xml(string iPath,string iContent) {
             Path=iPath;
             Content=iContent;
         }
-        #endregion 
+        #endregion
     }
 }

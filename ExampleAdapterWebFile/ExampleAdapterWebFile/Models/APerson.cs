@@ -17,7 +17,7 @@ namespace ExampleAdapterWebFile.Models {
         #endregion
         #region Methods 
         // html title
-        public abstract string  ToString();
-        #endregion 
+        public abstract string ToString();
+        #endregion
     }
 }

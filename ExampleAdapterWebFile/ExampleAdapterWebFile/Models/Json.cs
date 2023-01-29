@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 
 namespace ExampleAdapterWebFile.Models {
-    class Json { 
+    class Json {
         #region Fields 
         private string path;
         private string content;

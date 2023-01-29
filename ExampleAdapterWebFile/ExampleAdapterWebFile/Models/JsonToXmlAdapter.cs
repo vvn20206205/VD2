@@ -1,5 +1,5 @@
-﻿using Newtonsoft.Json; 
-using System.Web; 
+﻿using Newtonsoft.Json;
+using System.Web;
 
 namespace ExampleAdapterWebFile.Models {
     class JsonToXmlAdapter : IAnalyticsLibrary {
@@ -22,7 +22,7 @@ namespace ExampleAdapterWebFile.Models {
             string _JsonToXml = _XmlObject.OuterXml;
             return new Xml("",_JsonToXml);
         }
-        public HtmlString ProcessData<T>(Xml iObjectXml, T iObject) { 
+        public HtmlString ProcessData<T>(Xml iObjectXml,T iObject) {
             return new HtmlString("Không bắt buộc code vì kế thừa từ IAnalyticsLibrary theo lí thuyết Adapter");
         }
         #endregion

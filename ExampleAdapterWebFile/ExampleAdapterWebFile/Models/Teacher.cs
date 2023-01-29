@@ -17,9 +17,9 @@ namespace ExampleAdapterWebFile.Models {
         #endregion
         #region Methods 
         // html title
-        public override string  ToString() {
+        public override string ToString() {
             return "Teacher";
         }
-        #endregion 
+        #endregion
     }
-} 
+}

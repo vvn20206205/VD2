@@ -23,5 +23,5 @@ namespace ExampleAdapterWebFile.Models {
             return "Student";
         }
         #endregion
-    } 
+    }
 }
