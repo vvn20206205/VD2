@@ -9,6 +9,7 @@ namespace ExampleAdapterWebFile.Models {
 
         public const string XML_CHOOSE = "XML";
         public const string JSON_CHOOSE = "JSON";
+
         public const string FILE_XML_EXTENSION = ".xml";
         public const string FILE_JSON_EXTENSION = ".json";
 

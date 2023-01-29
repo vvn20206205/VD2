@@ -135,7 +135,7 @@
     <Compile Include="Models\Program.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Models\Teacher.cs" />
-    <Compile Include="Models\DemoThirdPartyAnalyticsLibrary.cs" />
+    <Compile Include="Models\LibraryDemo.cs" />
     <Compile Include="Models\Xml.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

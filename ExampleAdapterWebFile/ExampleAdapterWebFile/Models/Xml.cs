@@ -24,6 +24,5 @@ namespace ExampleAdapterWebFile.Models {
             Content=iContent;
         }
         #endregion 
-
     }
 }
