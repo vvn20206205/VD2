@@ -1,14 +1,5 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Web;
-using System.Xml.Linq;
+﻿using Newtonsoft.Json; 
+using System.Web; 
 
 namespace ExampleAdapterWebFile.Models {
     class JsonToXmlAdapter : IAnalyticsLibrary {
@@ -17,14 +8,14 @@ namespace ExampleAdapterWebFile.Models {
             _jsonlData=iJsonData;
         }
         public Xml GetData() {
+            // Quá trình chuyển đổi có sử dụng thêm thư viện using Newtonsoft.Json; 
             string iJsonString = _jsonlData.Content;
             var xmlObject = JsonConvert.DeserializeXmlNode(iJsonString);
             string jsonToXml = xmlObject.OuterXml;
             return new Xml("",jsonToXml);
         }
-        public HtmlString ProcessData<T>(Xml iObjectXml,string iXmlObjectRootNode,T iObject) {
-
-            return new HtmlString("Không cần bắt buộc code vì kế thừa từ interface IAnalyticsLibrary");
+        public HtmlString ProcessData<T>(Xml iObjectXml, T iObject) { 
+            return new HtmlString("Không bắt buộc code vì kế thừa từ IAnalyticsLibrary theo lí thuyết Adapter");
         }
     }
 }

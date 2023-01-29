@@ -8,9 +8,10 @@ namespace ExampleAdapterWebFile.Models {
         private string subject; 
         public string Subject { get => subject; set => subject=value; }
         public Teacher() {
-        } 
-        public override string SayHello() {
-            return $"Xin chào, tôi là giáo viên. {ToString()}";
+        }
+        // html title
+        public override string  ToString() {
+            return "Teacher";
         }
     }
 } 

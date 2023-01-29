@@ -16,16 +16,16 @@ namespace ExampleAdapterWebFile.Models {
 
                 if(_FileInfo.Extension==CONFIG.FILE_XML_EXTENSION) {
                     //(có hỗ trợ)
-                    Xml nghia = new Xml(iFilePath);
-                    IAnalyticsLibrary library = new DemoThirdPartyAnalyticsLibrary();
-                    return library.ProcessData<Student>(nghia,"student",new Student());
+                    Xml _XmlSupport = new Xml(iFilePath);
+                    IAnalyticsLibrary _DemoDibrary = new DemoThirdPartyAnalyticsLibrary();
+                    return _DemoDibrary.ProcessData<Student>(_XmlSupport,new Student());
                 } else if(_FileInfo.Extension==CONFIG.FILE_JSON_EXTENSION) {
                     //(không hỗ trợ)
-                    Json nghia = new Json(iFilePath);
-                    JsonToXmlAdapter adapter = new JsonToXmlAdapter(nghia);
+                    Json _JsonNoSupport = new Json(iFilePath);
+                    JsonToXmlAdapter _AdapterJsonToXml = new JsonToXmlAdapter(_JsonNoSupport);
 
-                    IAnalyticsLibrary library = new DemoThirdPartyAnalyticsLibrary();
-                    return library.ProcessData<Teacher>(adapter.GetData(),"teacher",new Teacher());
+                    IAnalyticsLibrary _DemoDibrary = new DemoThirdPartyAnalyticsLibrary();
+                    return _DemoDibrary.ProcessData<Teacher>(_AdapterJsonToXml.GetData(),new Teacher());
                 } else {
                     throw new PathIncorrect();
                 }
@@ -35,4 +35,4 @@ namespace ExampleAdapterWebFile.Models {
         }
     }
 
-}
+}//Và tệ hơn nữa, bạn có thể không có quyền truy cập vào mã nguồn của thư viện ngay từ đầu, khiến cho phương pháp này không thể thực hiện được.

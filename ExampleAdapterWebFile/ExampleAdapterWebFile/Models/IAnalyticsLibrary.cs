@@ -7,6 +7,6 @@ using System.Web;
 
 namespace ExampleAdapterWebFile.Models {
     interface IAnalyticsLibrary {
-        HtmlString ProcessData<T>(Xml  iObjectXml,string iXmlObjectRootNode,T iObject);
+        HtmlString ProcessData<T>(Xml  iObjectXml, T iObject);
     }
 }

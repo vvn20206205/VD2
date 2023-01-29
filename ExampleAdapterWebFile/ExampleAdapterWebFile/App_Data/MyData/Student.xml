@@ -9,45 +9,5 @@
 		<id>mssv xml 1</id>
 		<name>tên xml 1</name>
 		<score>điểm xml 1</score>
-	</student>
-	<student>
-		<id>mssv xml 2</id>
-		<name>tên xml 2</name>
-		<score>điểm xml 2</score>
-	</student>
-	<student>
-		<id>mssv xml 3</id>
-		<name>tên xml 3</name>
-		<score>điểm xml 3</score>
-	</student>
-	<student>
-		<id>mssv xml 4</id>
-		<name>tên xml 4</name>
-		<score>điểm xml 4</score>
-	</student>
-	<student>
-		<id>mssv xml 5</id>
-		<name>tên xml 5</name>
-		<score>điểm xml 5</score>
-	</student>
-	<student>
-		<id>mssv xml 6</id>
-		<name>tên xml 6</name>
-		<score>điểm xml 6</score>
-	</student>
-	<student>
-		<id>mssv xml 7</id>
-		<name>tên xml 7</name>
-		<score>điểm xml 7</score>
-	</student>
-	<student>
-		<id>mssv xml 8</id>
-		<name>tên xml 8</name>
-		<score>điểm xml 8</score>
-	</student>
-	<student>
-		<id>mssv xml 9</id>
-		<name>tên xml 9</name>
-		<score>điểm xml 9</score>
-	</student>
+	</student> 
 </liststudents>

@@ -9,9 +9,7 @@ namespace ExampleAdapterWebFile.Models {
         public string Name { get => name; set => name=value; }
         public APerson() {
         }
-        public abstract string SayHello();
-        public override string ToString() {
-            return $"Tên tôi là: {Name}";
-        }
+        // html title
+        public abstract string  ToString();
     }
 }

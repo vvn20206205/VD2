@@ -13,7 +13,7 @@ using System.Runtime.InteropServices;
 namespace ExampleAdapterWebFile.Controllers {
     public class HomeController : Controller {
         public ActionResult Index() {
-            ViewBag.Title=CONFIG.NAME;
+            ViewBag.Title=CONFIG.GROUP_NAME;
             return View();
         }
     }

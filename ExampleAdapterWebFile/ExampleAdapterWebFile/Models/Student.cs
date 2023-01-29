@@ -11,8 +11,9 @@ namespace ExampleAdapterWebFile.Models {
         public string Id { get => id; set => id=value; } 
         public Student() {
         } 
-        public override string SayHello() {
-            return $"Xin chào, tôi là sinh viên. {ToString()}";
+        // html title
+        public override string ToString() {
+            return "Student";
         }
     } 
 }

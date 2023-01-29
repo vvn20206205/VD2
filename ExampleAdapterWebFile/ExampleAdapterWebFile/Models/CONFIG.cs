@@ -5,7 +5,7 @@ using System.Web;
 
 namespace ExampleAdapterWebFile.Models {
     public class CONFIG {
-        public const string NAME = "Group 13: Design pattern adapter";
+        public const string GROUP_NAME = "Group 13: Design pattern adapter";
 
         public const string XML_CHOOSE = "XML";
         public const string JSON_CHOOSE = "JSON";

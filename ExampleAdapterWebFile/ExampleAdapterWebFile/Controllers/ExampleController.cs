@@ -9,7 +9,7 @@ namespace ExampleAdapterWebFile.Controllers {
     public class ExampleController : Controller {
         public ActionResult ProcessExample(string type) {
             try {
-                ViewBag.Title=CONFIG.NAME;
+                ViewBag.Title=CONFIG.GROUP_NAME;
 
                 string _FilePath;
                 if(type==CONFIG.XML_CHOOSE) {
